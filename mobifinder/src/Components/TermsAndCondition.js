@@ -6,7 +6,7 @@ export default function TermsAndCondition({ onClose }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-60"
+            className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-90"
         >
             <div className="bg-gradient-to-r from-black to-gray-800 p-6 rounded-md w-[500px] space-y-4">
                 <h2 className="text-white text-xl font-bold">Terms & Conditions</h2>
