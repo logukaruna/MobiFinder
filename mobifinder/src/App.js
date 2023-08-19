@@ -19,6 +19,7 @@ function App() {
           <TermsAndCondition onClose={() => setHasAgreedToTerms(true)} />
         )}
       </div>
+    </div>
       
 
   );
