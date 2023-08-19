@@ -10,7 +10,7 @@ export default function Home() {
             animate={{ y: 0 }}
             transition={{ duration: 0.8, type: 'spring', stiffness: 80 }}
             className="text-5xl font-bold text-white mb-5">
-            Welcome to Mobile Insight!
+            Welcome to Mobile <span className='text-purple-500'>Insight</span>
         </motion.h1>
         <motion.p
             initial={{ y: 50 }}
@@ -24,7 +24,7 @@ export default function Home() {
                 <motion.div
                     key={index}
                     whileHover={{ scale: 1.05 }}
-                    className="p-5 rounded bg-purple-500 shadow-lg">
+                    className="p-5 rounded bg-purple-600 shadow-lg">
                     <h2 className="text-xl font-bold text-white">{item}</h2>
                     <p className="text-white mt-2">
                         Explore {item.toLowerCase()} to find your best fit.
@@ -34,12 +34,12 @@ export default function Home() {
            
         </div>
         <motion.div              
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                    transition={{ duration: 0.5 }}
-        className='flex flex-col mt-4 justify-center items-center '>
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        transition={{ duration: 0.5 }}
+        className='flex flex-col mt-7 justify-center items-center '>
             
-                <button className=' bg-blue-500 rounded-md px-10 py-3  text-white'>Get Started</button>
+                <button className=' bg-purple-700 rounded-lg px-10 py-3  text-white'>Get Started</button>
             </motion.div>
     </div>
 </motion.div>

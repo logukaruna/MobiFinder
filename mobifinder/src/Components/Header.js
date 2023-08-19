@@ -16,7 +16,7 @@ export default function Header() {
 
                     <nav>
                         <ul className="flex space-x-4">
-                            {['Home', 'About Us', 'Contact'].map((item, idx) => (
+                            {['Home', 'Compare', 'About Us', 'Contact', ].map((item, idx) => (
                                 <motion.li
                                     key={idx}
                                     whileHover={{ scale: 1.05 }}
