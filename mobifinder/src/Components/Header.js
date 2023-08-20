@@ -1,7 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 export default function Header() {
+    let Navitems = ['Home', 'Compare', 'About Us', 'Contact']
     return (
         <>
             <header className="bg-gray-900 text-white shadow-lg">
@@ -16,7 +18,7 @@ export default function Header() {
 
                     <nav>
                         <ul className="flex space-x-4">
-                            {['Home', 'Compare', 'About Us', 'Contact', ].map((item, idx) => (
+                            {Navitems.map((item, idx) => (
                                 <motion.li
                                     key={idx}
                                     whileHover={{ scale: 1.05 }}
@@ -24,9 +26,9 @@ export default function Header() {
                                     transition={{ duration: 0.5 }}
 
                                 >
-                                    <button className="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded transition duration-300">
+                                    <Link to={`/${item.toLowerCase().replace(/\s+/g, '')}`} className="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded transition duration-300">
                                         {item}
-                                    </button>
+                                    </Link>
                                 </motion.li>
                             ))}
                         </ul>
@@ -36,3 +38,4 @@ export default function Header() {
         </>
     )
 }
+
